@@ -3,6 +3,12 @@ on:
   push:
     branches:    
       - blu_spark-10
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'version'
+        required: false
+        default: '1.0.0'
 
 jobs:
   build:
