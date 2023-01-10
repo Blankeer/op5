@@ -24,6 +24,8 @@ export CROSS_COMPILE=aarch64-none-linux-gnu-
 # CMP
 git clone https://github.com/Makiras/op5.git
 git clone https://github.com/osm0sis/AnyKernel3 AnyKernel
+rm -rf AnyKernel/.git
+rm -rf AnyKernel/.github
 cd op5
 make clean 
 make mrproper 
